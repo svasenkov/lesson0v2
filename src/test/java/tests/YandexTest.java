@@ -12,19 +12,7 @@ public class YandexTest {
 
     @Test
     void selenideSearchTest() {
-        // Открыть google
-        open("https://yandex.ru");
-
-        // Ввести Selenide в поиск
-        $(byId("text")).setValue("Selenide").pressEnter();
-
-        // Проверить, что Selenide появился в результатах поиска
-        $("html").shouldHave(text("ru.selenide.org"));
-    }
-
-    @Test
-    void selenideSearchTest2() {
-        // Открыть google
+        // Открыть Яндекс
         open("https://yandex.ru");
 
         // Ввести Selenide в поиск
