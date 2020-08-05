@@ -22,8 +22,8 @@ public class YandexTest {
         $("html").shouldHave(text("ru.selenide.org"));
     }
 
-    /*@Test
-    void selenideSearchTest() {
+    @Test
+    void selenideSearchTest2() {
         // Открыть google
         open("https://yandex.ru");
 
@@ -32,5 +32,5 @@ public class YandexTest {
 
         // Проверить, что Selenide появился в результатах поиска
         $("html").shouldHave(text("ru.selenide.org"));
-    }*/
+    }
 }
