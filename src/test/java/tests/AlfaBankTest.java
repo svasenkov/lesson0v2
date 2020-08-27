@@ -34,7 +34,6 @@ public class AlfaBankTest {
         $(byLinkText("Архивные депозиты")).click();
 
         $("body").shouldHave(text("Архивные депозиты"));
-
         $$(".product-cell__cell-wrapper").shouldHave(size(3));
     }
 
@@ -43,8 +42,7 @@ public class AlfaBankTest {
         open("http://alfabank.ru");
 
         $(byText("Вклады")).click();
-
-        $(byClassName("selected")).sibling(4).click();
+        $(".selected").sibling(4).click();
 
         $("body").shouldHave(text("Страхование вкладов"));
 
@@ -55,7 +53,6 @@ public class AlfaBankTest {
         open("http://alfabank.ru");
 
         $(byText("Вклады")).click();
-
         $(byTitle("Специальный счет по 44-ФЗ")).closest("li").preceding(0).click();
 
         $("body").shouldHave(text("Страхование вкладов"));
